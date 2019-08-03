@@ -1,0 +1,5 @@
+valgrind --tool=cachegrind -v ./poisson_test 100 1000
+
+
+cg_annotate --auto=yes cachegrind.out.*
+
